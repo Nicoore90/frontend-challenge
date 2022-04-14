@@ -1,0 +1,229 @@
+.navbar {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+
+    &__menu {
+        height: 10px;
+        padding-left: 0px;
+    }
+
+    &__logo {
+        height: 50px;
+        width: 80%;
+    }
+
+    &__search {
+        height: 20px;
+    }
+}
+
+.adv {
+    width: 100%;
+}
+
+.hero {
+    width: 100%;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__image {
+        width: 80%;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.testimony {
+    height: 250px;
+    width: 	400px;
+}
+
+.faq {
+    display: flex;
+    flex-direction: row;
+
+    &__text {
+        width: 95%;
+    }
+
+    svg {
+        margin-top: 25px;
+    }
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    background-color: #ecf0f7;
+    justify-content: center;
+    align-items: center;
+
+    &__image {
+        height: 250px;
+        width: 250px;
+    }
+
+    &__send {
+        width: 43%;
+    }
+    
+}
+
+.footer {
+    background-color: #265E6C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+        width: 100%;
+    }
+
+    &__container {
+        &__p {
+            color: #ffffff;
+        }
+    }
+
+    &__list {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+
+        &__item {
+            font-size: 8px;
+            color: #ffffff;
+        }
+    }
+}
+
+.advArt {
+    width: 100%;
+}
+
+.artImage {
+    width: 100%;
+}
+
+.form{
+    width: 80%;
+    margin-left: 10%;
+
+    &__nombre{
+        display: block;
+        padding: 10px;
+        margin: 10px;
+        width: 100%;
+    }
+
+    &__email {
+        display: block;
+        padding: 10px;
+        margin: 10px;
+        width: 100%;
+    }
+
+    &__dropdown {
+        display: block;
+        padding: 10px;
+        margin: 10px;
+        width: 100%;
+    }
+
+    &__textarea {
+        display: block;
+        padding: 10px;
+        margin: 10px;
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .adv {
+        display: none;
+    }
+
+    .hero {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .article {
+        flex-direction: row;
+        width: 60%;
+        padding-bottom: 20px;
+
+        &__image {
+            width: 40%;
+        }
+
+        &__content {
+            h1{
+                font-size: 20px;
+            }
+
+            p{
+                font-size: 10px;
+            }
+        }
+    }
+
+    .testimony {
+        width: 100%;
+    }
+
+    .newsletter {
+        flex-direction: row;
+        align-items: flex-end;
+
+        &__image {
+            height: 400px;
+            width: 400px;
+            padding: 20px;
+        }
+        
+        &__send {
+            width: 10%;
+        }
+       
+    }
+
+    .footer{
+        &__container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        &__list{
+            &__item {
+                font-size: 16px;
+                padding: 10px;
+            }
+        }
+    }
+
+    .advArt {
+        display: none;
+    }
+
+    .artImage {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
